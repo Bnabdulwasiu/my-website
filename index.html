@@ -57,111 +57,39 @@
             <h2>Backend Skills</h2>
             <div class="skills-grid">
                 
-                <div class="skill-card" id="skill-api-design">
+                <div class="skill-card" id="skill-api-security">
                     <div class="skill-header">
-                        <span class="skill-title">API Design & Development</span>
-                        <span class="badge badge-skill">REST</span>
+                        <span class="skill-title">API Design &amp; Security</span>
+                        <span class="badge badge-skill">REST &amp; OAuth</span>
                     </div>
-                    <p class="skill-desc">Designing clean, async RESTful APIs with Pydantic validation, standardized JSON error envelopes, and CORS policies.</p>
+                    <p class="skill-desc">Designing clean, async RESTful APIs with Pydantic validations. Implementing GitHub OAuth, token refreshes, and secure session management via HTTP-only cookies and CSRF protections.</p>
                     <div class="skill-provenance">
                         <span>Used in:</span>
-                        <a href="#proj-stage8a">Stage 8a</a>, <a href="#proj-stage34">Stage 3 & 4</a>, <a href="#proj-stage1">Stage 1</a>
+                        <a href="#proj-stage8a">Stage 8a</a>, <a href="#proj-stage34">Stage 3 &amp; 4</a>, <a href="#proj-stage1">Stage 1</a>, <a href="#proj-stage0">Stage 0</a>
                     </div>
                 </div>
 
-                <div class="skill-card" id="skill-auth">
+                <div class="skill-card" id="skill-database-caching">
                     <div class="skill-header">
-                        <span class="skill-title">Secure Authentication</span>
-                        <span class="badge badge-skill">OAuth & Cookie</span>
+                        <span class="skill-title">Databases &amp; Caching</span>
+                        <span class="badge badge-skill">SQL &amp; TTL Cache</span>
                     </div>
-                    <p class="skill-desc">Implementing GitHub OAuth redirection, CSRF state verification parameters, and secure HTTP-only cookies to block token access from JS.</p>
+                    <p class="skill-desc">Tuning PostgreSQL connection pooling and composite indexes. Swapping expensive DB round-trips for high-speed in-process TTL query caching. Streaming high-volume multipart CSV uploads line-by-line.</p>
                     <div class="skill-provenance">
                         <span>Used in:</span>
-                        <a href="#proj-stage34">Stage 3 & 4 (Insighta Web)</a>
+                        <a href="#proj-stage34">Stage 3 &amp; 4</a>, <a href="#proj-stage1">Stage 1 &amp; 2</a>
                     </div>
                 </div>
 
-                <div class="skill-card" id="skill-db-optimization">
+                <div class="skill-card" id="skill-storage-reliability">
                     <div class="skill-header">
-                        <span class="skill-title">Database Optimization</span>
-                        <span class="badge badge-skill">Indexes & Pool</span>
+                        <span class="skill-title">Storage &amp; Verification</span>
+                        <span class="badge badge-skill">WAL &amp; Pytest</span>
                     </div>
-                    <p class="skill-desc">Designing indices (composite & single) to eliminate table-wide sequential scans, configuring connection pools, and utilizing async SQLAlchemy ORMs.</p>
+                    <p class="skill-desc">Designing append-only write-ahead log (WAL) engines with crash-safe startup index recovery. Resolving multi-byte UTF-8 data offsets and testing systems via comprehensive Pytest suites.</p>
                     <div class="skill-provenance">
                         <span>Used in:</span>
-                        <a href="#proj-stage34">Stage 3 & 4</a>, <a href="#proj-stage1">Stage 1 & 2</a>
-                    </div>
-                </div>
-
-                <div class="skill-card" id="skill-concurrency">
-                    <div class="skill-header">
-                        <span class="skill-title">Background Concurrency</span>
-                        <span class="badge badge-skill">asyncio</span>
-                    </div>
-                    <p class="skill-desc">Coordinating parallel HTTP requests to upstream predictions microservices concurrently using AsyncClient and asyncio.gather wrappers.</p>
-                    <div class="skill-provenance">
-                        <span>Used in:</span>
-                        <a href="#proj-stage1">Stage 1</a>, <a href="#proj-stage2">Stage 2</a>
-                    </div>
-                </div>
-
-                <div class="skill-card" id="skill-testing">
-                    <div class="skill-header">
-                        <span class="skill-title">Automated Testing</span>
-                        <span class="badge badge-skill">Pytest</span>
-                    </div>
-                    <p class="skill-desc">Writing custom test suites simulating write operations, index reconstructions, and validating UTF-8 multi-byte boundary calculations.</p>
-                    <div class="skill-provenance">
-                        <span>Used in:</span>
-                        <a href="#proj-stage8a">Stage 8a</a>
-                    </div>
-                </div>
-
-                <div class="skill-card" id="skill-logging">
-                    <div class="skill-header">
-                        <span class="skill-title">Logging & Recovery</span>
-                        <span class="badge badge-skill">WAL Recovery</span>
-                    </div>
-                    <p class="skill-desc">Designing append-only event stores that recover from crashes by tracking byte lines and ignoring malformed blocks.</p>
-                    <div class="skill-provenance">
-                        <span>Used in:</span>
-                        <a href="#proj-stage8a">Stage 8a</a>
-                    </div>
-                </div>
-
-                <div class="skill-card" id="skill-deployment">
-                    <div class="skill-header">
-                        <span class="skill-title">Production Deployment</span>
-                        <span class="badge badge-skill">Vercel & Cloud</span>
-                    </div>
-                    <p class="skill-desc">Deploying server instances on FastAPI Cloud and static frontends on Vercel with domain connections and CORS handling.</p>
-                    <div class="skill-provenance">
-                        <span>Used in:</span>
-                        <a href="#proj-stage34">Stage 3 & 4</a>, <a href="#proj-stage1">Stage 1</a>
-                    </div>
-                </div>
-
-                <div class="skill-card" id="skill-caching">
-                    <div class="skill-header">
-                        <span class="skill-title">Caching Systems</span>
-                        <span class="badge badge-skill">TTL Cache</span>
-                    </div>
-                    <p class="skill-desc">Implementing in-process caches with deterministic key serialization to normalize filters and speed up hot paths under 5ms.</p>
-                    <div class="skill-provenance">
-                        <span>Used in:</span>
-                        <a href="#proj-stage34">Stage 3 & 4</a>
-                    </div>
-                </div>
-
-                <div class="skill-card" id="skill-docs">
-                    <div class="skill-header">
-                        <span class="skill-title">Technical Documentation</span>
-                        <span class="badge badge-skill">Specs</span>
-                    </div>
-                    <p class="skill-desc">Writing complete architecture specs, database optimization reports, and installation guides mapping CLI parameters.</p>
-                    <div class="skill-provenance">
-                        <span>Used in:</span>
-                        <a href="#proj-stage34">Stage 3 & 4</a>, <a href="#proj-stage8a">Stage 8a</a>
+                        <a href="#proj-stage8a">Stage 8a</a>, <a href="#proj-stage2">Stage 2</a>
                     </div>
                 </div>
 
