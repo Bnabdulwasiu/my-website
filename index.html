@@ -4,59 +4,495 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abu_umair</title>
+    <title>Abdulrahman | Backend Engineer Portfolio</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link href="favicon.ico" rel="icon"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <!-- Modern Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="top-container">
-        <img class="top_cloud" src="images/cloud.png" alt="cloud-img">
-        <h1>I'm Abdulrahman.</h1>
-        <h2 id="a_programmer">a <span class="pro">pro</span>grammer.</h2>
-        <img class="bottom_cloud" src="images/cloud.png" alt="cloud-img">
-        <!-- <img src="images/mountain.png" alt="mountain-img"> -->
-    </div>
-    <div class="middle-container">
-        <div class="profile">
-          <img class='my_photo' src="images/abdulrahman.jpg" alt="MY_PHOTO">
-          <h2>Hello.</h2>
-          <p>I am a Backend Developer |  I use python for development.</p>
-        </div>
-        <hr>
-        <div class="skills">
-          <h2>My Skills.</h2>
-          <div class="skill-row">
-            <img class="computer_photo" src="images/computer.png" alt="computer_photo">
-            <h3>Backend Development</h3>
-            <p>I started learning to code noticing the rise in demand of programmers. Over time i have gained a wealth of experience in development.</p>
-        </div>
-          <div class="skill-row">
-            <img class="electrical_eng" src="images/electrical.png" alt="electrical_eng">
-            <h3>Electrical and electronics engineering</h3>
-            <p class="eng-description">I study Electrical and electronics engineering in college | Embedded Systems</p>
-          </div>
-        </div>
-        <hr>
+    <!-- HERO SECTION -->
+    <header class="hero-wrapper" id="home">
+        <div class="container hero-grid">
+            <img class="profile-avatar" src="images/abdulrahman.jpg" alt="Abdulrahman - Backend Developer">
+            <div class="hero-info">
+                <span class="meta-title">Backend Developer Portfolio</span>
+                <h1>Abdulrahman</h1>
+                <p class="bio">I build high-performance APIs, design custom storage engines, and tune databases for scale. Specializing in Python, FastAPI, and asynchronous backend systems.</p>
+                
+                <div class="hero-meta-row">
+                    <div class="hero-meta-item">
+                        <!-- Location Icon -->
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span>Nigeria (GMT+1)</span>
+                    </div>
+                    <div class="hero-meta-item">
+                        <!-- Code Icon -->
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        <span>Python / FastAPI / SQL</span>
+                    </div>
+                </div>
 
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <h3>If you love coding and programming generally.</h3>
-          <p class="contact-message">If you love coding and programming generally as much as i do? 
-            Would be glad to have you around! <br>Let's connect!.</p>
-          <a class="btn" href="mailto:abu_umair.dev@gmail.com">CONTACT ME</a>
+                <div class="social-links">
+                    <a class="social-btn primary" href="mailto:abuumair.dev@gmail.com" id="contact-email">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        Email Me
+                    </a>
+                    <a class="social-btn" href="https://www.linkedin.com/in/bnabdulwasiu" target="_blank" id="link-linkedin">LinkedIn</a>
+                    <a class="social-btn" href="https://www.github.com/bnabdulwasiu" target="_blank" id="link-github">GitHub</a>
+                    <a class="social-btn" href="https://twitter.com/bnabdulwasiu" target="_blank" id="link-twitter">Twitter</a>
+                </div>
+            </div>
         </div>
-      </div>
-      
-      
-      <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/bnabdulwasiu">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/bnabdulwasiu">Twitter</a>
-        <a class="footer-link" href="https://www.github.com/bnabdulwasiu">Website</a>
-        <p  class="copyright">© 2022 Abu-Umair. @ Abu_umair Techies.</p>
-      </div>
-      
+    </header>
+
+    <!-- BACKEND SKILLS SECTION -->
+    <main class="container">
+        <section class="section" id="skills">
+            <h2>Backend Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-card" id="skill-api-design">
+                    <div class="skill-header">
+                        <span class="skill-title">API Design & Development</span>
+                        <span class="badge badge-skill">REST</span>
+                    </div>
+                    <p class="skill-desc">Designing clean, async RESTful APIs with Pydantic validation, standardized JSON error envelopes, and CORS policies.</p>
+                    <div class="skill-provenance">
+                        <span>Used in:</span>
+                        <a href="#proj-stage8a">Stage 8a</a>, <a href="#proj-stage34">Stage 3 & 4</a>, <a href="#proj-stage1">Stage 1</a>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-auth">
+                    <div class="skill-header">
+                        <span class="skill-title">Secure Authentication</span>
+                        <span class="badge badge-skill">OAuth & Cookie</span>
+                    </div>
+                    <p class="skill-desc">Implementing GitHub OAuth redirection, CSRF state verification parameters, and secure HTTP-only cookies to block token access from JS.</p>
+                    <div class="skill-provenance">
+                        <span>Used in:</span>
+                        <a href="#proj-stage34">Stage 3 & 4 (Insighta Web)</a>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-db-optimization">
+                    <div class="skill-header">
+                        <span class="skill-title">Database Optimization</span>
+                        <span class="badge badge-skill">Indexes & Pool</span>
+                    </div>
+                    <p class="skill-desc">Designing indices (composite & single) to eliminate table-wide sequential scans, configuring connection pools, and utilizing async SQLAlchemy ORMs.</p>
+                    <div class="skill-provenance">
+                        <span>Used in:</span>
+                        <a href="#proj-stage34">Stage 3 & 4</a>, <a href="#proj-stage1">Stage 1 & 2</a>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-concurrency">
+                    <div class="skill-header">
+                        <span class="skill-title">Background Concurrency</span>
+                        <span class="badge badge-skill">asyncio</span>
+                    </div>
+                    <p class="skill-desc">Coordinating parallel HTTP requests to upstream predictions microservices concurrently using AsyncClient and asyncio.gather wrappers.</p>
+                    <div class="skill-provenance">
+                        <span>Used in:</span>
+                        <a href="#proj-stage1">Stage 1</a>, <a href="#proj-stage2">Stage 2</a>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-testing">
+                    <div class="skill-header">
+                        <span class="skill-title">Automated Testing</span>
+                        <span class="badge badge-skill">Pytest</span>
+                    </div>
+                    <p class="skill-desc">Writing custom test suites simulating write operations, index reconstructions, and validating UTF-8 multi-byte boundary calculations.</p>
+                    <div class="skill-provenance">
+                        <span>Used in:</span>
+                        <a href="#proj-stage8a">Stage 8a</a>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-logging">
+                    <div class="skill-header">
+                        <span class="skill-title">Logging & Recovery</span>
+                        <span class="badge badge-skill">WAL Recovery</span>
+                    </div>
+                    <p class="skill-desc">Designing append-only event stores that recover from crashes by tracking byte lines and ignoring malformed blocks.</p>
+                    <div class="skill-provenance">
+                        <span>Used in:</span>
+                        <a href="#proj-stage8a">Stage 8a</a>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-deployment">
+                    <div class="skill-header">
+                        <span class="skill-title">Production Deployment</span>
+                        <span class="badge badge-skill">Vercel & Cloud</span>
+                    </div>
+                    <p class="skill-desc">Deploying server instances on FastAPI Cloud and static frontends on Vercel with domain connections and CORS handling.</p>
+                    <div class="skill-provenance">
+                        <span>Used in:</span>
+                        <a href="#proj-stage34">Stage 3 & 4</a>, <a href="#proj-stage1">Stage 1</a>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-caching">
+                    <div class="skill-header">
+                        <span class="skill-title">Caching Systems</span>
+                        <span class="badge badge-skill">TTL Cache</span>
+                    </div>
+                    <p class="skill-desc">Implementing in-process caches with deterministic key serialization to normalize filters and speed up hot paths under 5ms.</p>
+                    <div class="skill-provenance">
+                        <span>Used in:</span>
+                        <a href="#proj-stage34">Stage 3 & 4</a>
+                    </div>
+                </div>
+
+                <div class="skill-card" id="skill-docs">
+                    <div class="skill-header">
+                        <span class="skill-title">Technical Documentation</span>
+                        <span class="badge badge-skill">Specs</span>
+                    </div>
+                    <p class="skill-desc">Writing complete architecture specs, database optimization reports, and installation guides mapping CLI parameters.</p>
+                    <div class="skill-provenance">
+                        <span>Used in:</span>
+                        <a href="#proj-stage34">Stage 3 & 4</a>, <a href="#proj-stage8a">Stage 8a</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HNG PROJECTS SECTION -->
+        <section class="section" id="projects">
+            <h2>HNG Projects</h2>
+            <div class="projects-list">
+
+                <!-- STAGE 8a -->
+                <article class="project-card" id="proj-stage8a">
+                    <div class="project-main">
+                        <span class="badge badge-tech">Stage 8a</span>
+                        <h3>Append-Only Event Store</h3>
+                        <div class="project-tech">
+                            <span class="badge badge-tech">Python</span>
+                            <span class="badge badge-tech">FastAPI</span>
+                            <span class="badge badge-tech">Storage WAL</span>
+                            <span class="badge badge-tech">Pytest</span>
+                        </div>
+                        <p class="project-desc">A custom-built, lightweight database engine that streams event records into an append-only log file on disk (`events.log`) and reads them back in O(1) time using an in-memory byte offset index.</p>
+                        
+                        <div class="project-contrib">
+                            <h4>My Contribution</h4>
+                            <ul>
+                                <li>Designed and built the log appending storage controller to prevent in-place file corruption.</li>
+                                <li>Implemented an automated startup recovery mechanism that parses bytes line-by-line to rebuild the memory index while skipping corrupt data.</li>
+                                <li>Solved UTF-8 multi-byte unicode calculation bugs by measuring pre-encoded bytes rather than character counts.</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#deep-dive" class="project-btn">View Deep Dive</a>
+                            <a href="https://github.com/Bnabdulwasiu/stage-8a" target="_blank" class="project-btn">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-proof">
+                        <img class="project-proof-img" src="images/recovery-log.png" alt="Recovery Log Output Screenshot">
+                        <span style="font-size: 0.75rem; color: var(--text-muted); margin-top: 8px; text-align: center;">Log index rebuild on startup</span>
+                    </div>
+                </article>
+
+                <!-- STAGE 3 & 4 -->
+                <article class="project-card" id="proj-stage34">
+                    <div class="project-main">
+                        <span class="badge badge-tech">Stage 3 & 4</span>
+                        <h3>Insighta Labs+ (Full-Stack Suite)</h3>
+                        <div class="project-tech">
+                            <span class="badge badge-tech">FastAPI</span>
+                            <span class="badge badge-tech">PostgreSQL</span>
+                            <span class="badge badge-tech">Vanilla JS/HTML</span>
+                            <span class="badge badge-tech">Python CLI</span>
+                            <span class="badge badge-tech">Vercel</span>
+                        </div>
+                        <p class="project-desc">A complete database-backed demographic exploration suite consisting of an optimized FastAPI server, a secure Vercel-deployed web dashboard, and a command-line developer interface.</p>
+                        
+                        <div class="project-contrib">
+                            <h4>My Contribution</h4>
+                            <ul>
+                                <li><strong>Optimized Backend Services</strong>: Added database indexes, connection pooling (10 active, 20 overflow), and query/auth TTL caching (<5ms reads). Built streaming multipart CSV parsing.</li>
+                                <li><strong>Web Portal Frontend</strong>: Built the login, dashboard, list-filter, and search views in Vanilla JS/HTML. Secured with HTTP-only cookies, OAuth callback CSRF checks, and automatic token refresh. Deployed live on Vercel.</li>
+                                <li><strong>Developer CLI</strong>: Designed a CLI client (`insighta`) enabling token retrieval, natural language profile query, and data export.</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://insighta-web-psi-neon.vercel.app" target="_blank" class="project-btn">Live Web Portal</a>
+                            <a href="https://github.com/Bnabdulwasiu/insighta-backend" target="_blank" class="project-btn">Backend Repo</a>
+                            <a href="https://github.com/Bnabdulwasiu/insighta-web" target="_blank" class="project-btn">Frontend Repo</a>
+                            <a href="https://github.com/Bnabdulwasiu/insighta-cli" target="_blank" class="project-btn">CLI Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-proof">
+                        <div class="project-proof-placeholder">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span>Multi-Client Ecosystem</span>
+                            <p>Web App (Vercel Live)<br>CLI Shell Tool<br>FastAPI Backend</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STAGE 2 -->
+                <article class="project-card" id="proj-stage2">
+                    <div class="project-main">
+                        <span class="badge badge-tech">Stage 2</span>
+                        <h3>Profile Enrichment with Natural Language Search</h3>
+                        <div class="project-tech">
+                            <span class="badge badge-tech">FastAPI</span>
+                            <span class="badge badge-tech">SQLite</span>
+                            <span class="badge badge-tech">SQLAlchemy</span>
+                            <span class="badge badge-tech">Regex</span>
+                            <span class="badge badge-tech">pycountry</span>
+                        </div>
+                        <p class="project-desc">Extended the profile microservice to support structured pagination, multi-column sorting, and a rule-based natural language parser that maps raw text queries into database filter variables.</p>
+                        
+                        <div class="project-contrib">
+                            <h4>My Contribution</h4>
+                            <ul>
+                                <li>Developed a regex-based NLP parser in `utils.py` that extracts genders, age groups, and numeric age ranges from text.</li>
+                                <li>Created a country resolver incorporating the `pycountry` library to normalize variations like "Nigeria" into 2-letter ISO codes.</li>
+                                <li>Handled conflict edge-cases (e.g. invalid query fallbacks, conflicting age constraints).</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Bnabdulwasiu/hng-stage2" target="_blank" class="project-btn">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-proof">
+                        <div class="project-proof-placeholder">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            <span>Query Mapping Demo</span>
+                            <p>"young males in nigeria"<br>↓<br><code>gender=male, age=16-24, country=NG</code></p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STAGE 1 -->
+                <article class="project-card" id="proj-stage1">
+                    <div class="project-main">
+                        <span class="badge badge-tech">Stage 1</span>
+                        <h3>Name Profile Enrichment API</h3>
+                        <div class="project-tech">
+                            <span class="badge badge-tech">FastAPI</span>
+                            <span class="badge badge-tech">aiosqlite</span>
+                            <span class="badge badge-tech">httpx</span>
+                            <span class="badge badge-tech">UUID v7</span>
+                        </div>
+                        <p class="project-desc">Designed an async profile generator that hits three external APIs simultaneously (Genderize, Agify, Nationalize) to compile demographic predictions for any given name and persists the data.</p>
+                        
+                        <div class="project-contrib">
+                            <h4>My Contribution</h4>
+                            <ul>
+                                <li>Designed the SQLite relational schema and set up async DB migrations using `aiosqlite`.</li>
+                                <li>Integrated parallel HTTP pooling using `httpx.AsyncClient` and coordinated concurrent requests using `asyncio.gather`.</li>
+                                <li>Used chronological UUID v7 identifiers to simplify listing and order profiles by timestamp.</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://profile-app-00443e51.fastapicloud.dev/docs" target="_blank" class="project-btn">Live API Docs</a>
+                            <a href="https://github.com/Bnabdulwasiu/gender-classifier" target="_blank" class="project-btn">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-proof">
+                        <div class="project-proof-placeholder">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                            <span>Deployment Platform</span>
+                            <p>FastAPI Cloud Engine<br>SQLite Data Storage</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- STAGE 0 -->
+                <article class="project-card" id="proj-stage0">
+                    <div class="project-main">
+                        <span class="badge badge-tech">Stage 0</span>
+                        <h3>Name Gender Classifier</h3>
+                        <div class="project-tech">
+                            <span class="badge badge-tech">Python</span>
+                            <span class="badge badge-tech">FastAPI</span>
+                            <span class="badge badge-tech">httpx</span>
+                            <span class="badge badge-tech">Pydantic</span>
+                        </div>
+                        <p class="project-desc">A microservice that evaluates the probability of a name's gender, applying confidence rules (minimum samples &amp; probability thresholds) to determine statistical reliability.</p>
+                        
+                        <div class="project-contrib">
+                            <h4>My Contribution</h4>
+                            <ul>
+                                <li>Created custom error handlers wrapping API exceptions into uniform JSON format.</li>
+                                <li>Implemented connection resource cleanup via FastAPI async context manager lifespan.</li>
+                                <li>Defined confidence validation criteria: <code>probability >= 0.7</code> and <code>sample_size >= 100</code>.</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Bnabdulwasiu/gender-classifier" target="_blank" class="project-btn">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-proof">
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;">
+                            <img class="project-proof-img" src="images/stage0-screenshot1.png" alt="Stage 0 API Response screenshot" style="max-height: 100px;">
+                            <img class="project-proof-img" src="images/stage0-screenshot2.png" alt="Stage 0 API Validation screenshot" style="max-height: 100px;">
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECT DEEP DIVE -->
+        <section class="section" id="deep-dive">
+            <h2>Featured Project Deep Dive</h2>
+            <div class="deep-dive-card">
+                <h3>Append-Only Event Store (Database WAL Engine)</h3>
+                <p class="deep-dive-intro">This project explores the core durability principles of databases like PostgreSQL. Instead of modifying files in-place (which risks fatal corruption upon crash), it implements an immutable write-ahead log system with in-memory indexes.</p>
+                
+                <div class="deep-dive-grid">
+                    <div>
+                        <div class="deep-dive-block">
+                            <h4>
+                                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; color: var(--accent-teal);"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                                The Problem It Solves
+                            </h4>
+                            <p>Modifying a database file in-place overwrites active bytes on disk. If the server crashes or loses power halfway through, both the previous data and the incoming update become corrupted. By appending all new operations to the end of the file, existing data remains physically safe on disk. The worst case of a crash is a partial line at the end, which the engine is designed to isolate and discard on reboot.</p>
+                        </div>
+
+                        <div class="deep-dive-block">
+                            <h4>
+                                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; color: var(--accent-teal);"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                                Engine Architecture &amp; Data Flow
+                            </h4>
+                            
+                            <div class="diagram-container">
+                                <div class="diagram-step">
+                                    <span style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">WRITE FLOW</span>
+                                    <div class="diagram-node active-teal">POST /events (JSON payload)</div>
+                                    <div class="diagram-arrow"></div>
+                                    <div class="diagram-node">Append to events.log (Immutable Disk)</div>
+                                    <div class="diagram-arrow"></div>
+                                    <div class="diagram-node active-indigo">Update memory index (ID -> offset, length)</div>
+                                </div>
+                                <div style="border-top: 1px solid var(--border-color); margin: 8px 0;"></div>
+                                <div class="diagram-step">
+                                    <span style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">READ FLOW (O(1) Seek)</span>
+                                    <div class="diagram-node active-indigo">GET /events/{id}</div>
+                                    <div class="diagram-arrow"></div>
+                                    <div class="diagram-node">Lookup offset &amp; length in RAM index</div>
+                                    <div class="diagram-arrow"></div>
+                                    <div class="diagram-node active-teal">f.seek(offset) + f.read(length)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deep-dive-block">
+                            <h4>
+                                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; color: var(--accent-teal);"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                API Endpoints &amp; Modules
+                            </h4>
+                            <p><strong>POST `/events`</strong>: Stamping UUID &amp; ISO timestamp, appending encoded payload, updating the index, returning response.</p>
+                            <p><strong>GET `/events/{id}`</strong>: Querying the RAM index, jumping directly to byte offsets using `f.seek()`, reading the exact length, decoding JSON, returning response.</p>
+                            <p><strong>GET `/stats`</strong>: Returns active event count and file byte size on disk.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="deep-dive-block">
+                            <h4>
+                                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; color: var(--accent-teal);"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                                Technical Challenge: The Unicode Bug
+                            </h4>
+                            <p><strong>The Bug:</strong> When calculating index offsets, measuring character length (e.g. <code>len(json_str)</code>) worked fine for ASCII text (1 char = 1 byte). However, if an event contained non-latin unicode characters (like <code>é</code>, <code>ü</code>, or emojis), those characters occupied multiple bytes. Character length was shorter than byte length, throwing off all subsequent offset values. Jumping with <code>f.seek()</code> landed mid-character, resulting in parsing garbage.</p>
+                            
+                            <p><strong>The Solution:</strong> Pre-encoding the JSON string to UTF-8 bytes before calculating the length, guaranteeing index lengths correspond precisely to the file's byte offsets. Additionally, since Python internally buffers reads (causing <code>f.tell()</code> to incorrectly return future values), the startup recovery loop tracks byte offsets manually by iterating through raw byte lines.</p>
+
+                            <div class="code-header">
+                                <span class="code-lang">python</span>
+                                <span>store.py</span>
+                            </div>
+                            <pre><code><span class="code-comment"># Stamp, Serialize &amp; Encode to UTF-8</span>
+event = {
+    <span class="code-string">"id"</span>: str(uuid.uuid4()),
+    <span class="code-string">"createdAt"</span>: datetime.now(timezone.utc).isoformat(),
+    **body,
+}
+<span class="code-comment"># Encode first to measure exact byte length</span>
+line = (json.dumps(event, ensure_ascii=<span class="code-number">False</span>) + <span class="code-string">"\n"</span>).encode(<span class="code-string">"utf-8"</span>)
+length = len(line) 
+
+<span class="code-comment"># Startup Recovery: Byte-Safe Rebuilding</span>
+offset = <span class="code-number">0</span>
+with open(self.log_path, <span class="code-string">"rb"</span>) as f:
+    for line in f:
+        length = len(line)
+        try:
+            event = json.loads(line.decode(<span class="code-string">"utf-8"</span>))
+            self.index[event[<span class="code-string">"id"</span>]] = {
+                <span class="code-string">"offset"</span>: offset, 
+                <span class="code-string">"length"</span>: length
+            }
+        except Exception:
+            <span class="code-comment"># Skip torn/corrupt lines from crashes</span>
+            pass
+        finally:
+            offset += length <span class="code-comment"># Track byte position</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEARNING REFLECTION -->
+        <section class="section" id="reflection">
+            <h2>Learning Reflection</h2>
+            <div class="reflection-box">
+                
+                <div class="reflection-item">
+                    <h4>Low-Level Data Mechanics</h4>
+                    <p>Building the append-only event store demystified databases for me. I learned that durability isn't magic—it's about write-ahead logs (WAL) protecting data from crash corruption at the byte level. Understanding how Python's internal file buffers interact with OS file cursors shifted how I write file I/O operations.</p>
+                </div>
+
+                <div class="reflection-item">
+                    <h4>Pragmatic Optimization &amp; Caching</h4>
+                    <p>Working on Insighta taught me how to scale without adding infrastructure overhead. I learned that adding proper database indexes is the single highest-impact change for read workloads, and that connection pooling prevents critical CPU/TCP setup bottlenecks. I learned how to build in-memory TTL caching with deterministic keys, which dropped query times from 320ms to under 5ms.</p>
+                </div>
+
+                <div class="reflection-item">
+                    <h4>Data Safety &amp; Scaling</h4>
+                    <p>I realized that scaling isn't just about speed, but also about resource conservation. Implementing chunked streaming CSV parsing (flushing 1,000 records at a time) and streaming large database exports showed me how to prevent server out-of-memory (OOM) crashes when dealing with millions of records.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- CONTACT FOOTER -->
+    <footer class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="contact-title">Get in Touch</h2>
+            <p class="contact-message">I am available for backend engineering roles, database optimization work, and API integrations. Let's discuss how we can build stable systems together.</p>
+            
+            <div class="contact-grid">
+                <a class="social-btn primary" href="mailto:abuumair.dev@gmail.com">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    abuumair.dev@gmail.com
+                </a>
+                <a class="social-btn" href="https://www.linkedin.com/in/bnabdulwasiu" target="_blank">LinkedIn</a>
+                <a class="social-btn" href="https://www.github.com/bnabdulwasiu" target="_blank">GitHub</a>
+                <a class="social-btn" href="https://twitter.com/bnabdulwasiu" target="_blank">Twitter</a>
+            </div>
+
+            <p class="copyright">© 2026 Abdulrahman. Deployed using static HTML &amp; CSS. Built for HNG Stage 8b.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
